@@ -1,0 +1,402 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "featured": "Destacado",
+    "shop": "Tienda",
+    "sale": "Rebajas",
+    "newsletter": "Boletín",
+    "shopNow": "Comprar Ahora"
+  },
+  "hero": [
+    "Free shipping on orders over $50",
+    "30-day hassle-free returns",
+    "Exclusive member deals every Friday"
+  ],
+  "categories": {
+    "eyebrow": "Explorar por Categoría",
+    "heading": "Encuentra Tu Estilo",
+    "viewAll": "Ver todas las categorías",
+    "shopLink": "Comprar ahora",
+    "tops": "Tops y Camisetas",
+    "hoodies": "Sudaderas",
+    "bottoms": "Pantalones y Faldas",
+    "outerwear": "Abrigos"
+  },
+  "featured": {
+    "eyebrow": "Favoritos Seleccionados",
+    "heading": "Los Mejores de Esta Semana",
+    "viewAll": "Ver todos los productos"
+  },
+  "lookbook": {
+    "eyebrow": "Catálogo de Temporada",
+    "heading": "Estilo que Habla por Sí Solo",
+    "subtext": "Explora nuestros looks de temporada seleccionados. Combina, mezcla y hazlo tuyo. Cada pieza está diseñada para destacar.",
+    "cta": "Explorar el Catálogo"
+  },
+  "newsletter": [
+    "Instant 10% off your first order when you sign up",
+    "First look at new collections before they go live",
+    "Members-only flash sales every Friday at noon"
+  ],
+  "trust": {
+    "shipping": "Envío gratis en compras mayores a $50",
+    "returns": "Devoluciones fáciles en 30 días",
+    "quality": "Calificación promedio de 4.8",
+    "drops": "Nuevos estilos cada semana"
+  },
+  "product": {
+    "addToCart": "Agregar al carrito",
+    "added": "¡Agregado!"
+  },
+  "shop": {
+    "eyebrow": "Colección completa",
+    "heading": "Compra todo",
+    "subtext": "Explora nuestro rango completo de streetwear, básicos y piezas de impacto. Filtra por categoría o busca exactamente lo que necesitas.",
+    "searchPlaceholder": "Busca estilos, categorías...",
+    "searchLabel": "Buscar productos",
+    "sortLabel": "Ordenar productos",
+    "sortDefault": "Ordenar: Destacados",
+    "sortPriceAsc": "Precio: Menor a mayor",
+    "sortPriceDesc": "Precio: Mayor a menor",
+    "sortRating": "Mejor valorados",
+    "categoryLabel": "Filtrar por categoría",
+    "resultsLabel": "productos encontrados",
+    "noResults": "Ningún producto coincide con tu búsqueda. Intenta con un filtro diferente."
+  },
+  "sale": {
+    "badge": "Ofertas por tiempo limitado",
+    "heading": "Hasta 30% de descuento",
+    "subtext": "Consigue las mejores piezas de la temporada a precios que no durarán. La venta termina cuando se agota el stock.",
+    "stat1Label": "Artículos en oferta",
+    "stat2Label": "Descuento máximo",
+    "stat3Label": "Ahorros totales disponibles",
+    "productsHeading": "Artículos en oferta",
+    "viewAll": "Explorar tienda completa",
+    "noItems": "Vuelve pronto para nuevos artículos en oferta."
+  },
+  "newsletterPage": {
+    "badge": "Nova Insiders",
+    "heading": "Sé el primero. Siempre.",
+    "subtext": "Únete a más de 12,000 miembros de Nova que obtienen acceso anticipado a lanzamientos, descuentos exclusivos e inspiración de estilo entregada semanalmente.",
+    "perksHeading": "Lo que obtienes como miembro",
+    "socialProofCount": "12,400+ suscriptores",
+    "socialProofLabel": "y creciendo cada semana",
+    "formHeading": "Reclama tu lugar",
+    "formSubtext": "Toma 10 segundos. No se requiere tarjeta de crédito.",
+    "emailLabel": "Correo electrónico",
+    "emailPlaceholder": "tu@email.com",
+    "submitBtn": "Únete a Nova Insiders",
+    "disclaimer": "Sin spam, nunca. Desuscribirse con un clic.",
+    "successHeading": "¡Ya estás dentro!",
+    "successSubtext": "Bienvenido a la comunidad Nova. Revisa tu bandeja de entrada para tu código de descuento del 10%.",
+    "bottomNote": "¿Ya eres suscriptor? Revisa tu bandeja de entrada para la oferta exclusiva de esta semana."
+  },
+  "featured-products": [
+    {
+      "name": "Oversized Graphic Hoodie",
+      "price": 64.99,
+      "originalPrice": 81.99,
+      "rating": 4.8,
+      "ratingCount": 312,
+      "isSale": true,
+      "discount": 20,
+      "isBestseller": false,
+      "category": "Hoodies & Sweatshirts",
+      "image": "/images/oversized-graphic-hoodie.jpg"
+    },
+    {
+      "name": "Air-Knit Jogger Set",
+      "price": 89.0,
+      "originalPrice": null,
+      "rating": 4.7,
+      "ratingCount": 198,
+      "isSale": false,
+      "discount": null,
+      "isBestseller": true,
+      "category": "Bottoms",
+      "image": "/images/air-knit-jogger-set.jpg"
+    },
+    {
+      "name": "Retro Colorblock Windbreaker",
+      "price": 112.0,
+      "originalPrice": 131.99,
+      "rating": 4.9,
+      "ratingCount": 87,
+      "isSale": true,
+      "discount": 15,
+      "isBestseller": false,
+      "category": "Outerwear",
+      "image": "/images/retro-colorblock-windbreaker.jpg"
+    },
+    {
+      "name": "Ribbed Cropped Tank (3-Pack)",
+      "price": 34.99,
+      "originalPrice": null,
+      "rating": 4.6,
+      "ratingCount": 540,
+      "isSale": false,
+      "discount": null,
+      "isBestseller": false,
+      "category": "Tops & Tees",
+      "image": "/images/ribbed-cropped-tank-3pack.jpg"
+    }
+  ],
+  "category-filter": [
+    {
+      "label": "All",
+      "value": "all"
+    },
+    {
+      "label": "Tops & Tees",
+      "value": "Tops & Tees"
+    },
+    {
+      "label": "Hoodies & Sweatshirts",
+      "value": "Hoodies & Sweatshirts"
+    },
+    {
+      "label": "Bottoms",
+      "value": "Bottoms"
+    },
+    {
+      "label": "Outerwear",
+      "value": "Outerwear"
+    },
+    {
+      "label": "Accessories",
+      "value": "Accessories"
+    },
+    {
+      "label": "Sale",
+      "value": "sale"
+    }
+  ],
+  "product-grid": [
+    {
+      "name": "Washed Denim Overshirt",
+      "price": 74.99,
+      "originalPrice": null,
+      "rating": 4.5,
+      "ratingCount": 221,
+      "isSale": false,
+      "discount": null,
+      "isBestseller": false,
+      "category": "Tops & Tees",
+      "image": "/images/washed-denim-overshirt.jpg"
+    },
+    {
+      "name": "Essential Slim-Fit Tee",
+      "price": 22.0,
+      "originalPrice": 31.99,
+      "rating": 4.7,
+      "ratingCount": 893,
+      "isSale": true,
+      "discount": 30,
+      "isBestseller": false,
+      "category": "Tops & Tees",
+      "image": "/images/essential-slim-fit-tee.jpg"
+    },
+    {
+      "name": "Cargo Wide-Leg Trousers",
+      "price": 96.0,
+      "originalPrice": null,
+      "rating": 4.6,
+      "ratingCount": 134,
+      "isSale": false,
+      "discount": null,
+      "isBestseller": false,
+      "category": "Bottoms",
+      "image": "/images/cargo-wide-leg-trousers.jpg"
+    },
+    {
+      "name": "Fleece Quarter-Zip Pullover",
+      "price": 58.0,
+      "originalPrice": 77.99,
+      "rating": 4.8,
+      "ratingCount": 407,
+      "isSale": true,
+      "discount": 25,
+      "isBestseller": false,
+      "category": "Hoodies & Sweatshirts",
+      "image": "/images/fleece-quarter-zip-pullover.jpg"
+    },
+    {
+      "name": "Satin Slip Midi Skirt",
+      "price": 49.99,
+      "originalPrice": null,
+      "rating": 4.4,
+      "ratingCount": 162,
+      "isSale": false,
+      "discount": null,
+      "isBestseller": false,
+      "category": "Bottoms",
+      "image": "/images/satin-slip-midi-skirt.jpg"
+    },
+    {
+      "name": "Heavyweight Crewneck Sweatshirt",
+      "price": 67.0,
+      "originalPrice": null,
+      "rating": 4.9,
+      "ratingCount": 289,
+      "isSale": false,
+      "discount": null,
+      "isBestseller": true,
+      "category": "Hoodies & Sweatshirts",
+      "image": "/images/heavyweight-crewneck-sweatshirt.jpg"
+    },
+    {
+      "name": "Puffer Vest",
+      "price": 85.0,
+      "originalPrice": 94.99,
+      "rating": 4.6,
+      "ratingCount": 98,
+      "isSale": true,
+      "discount": 10,
+      "isBestseller": false,
+      "category": "Outerwear",
+      "image": "/images/puffer-vest-outerwear.jpg"
+    },
+    {
+      "name": "Linen Blend Shorts",
+      "price": 38.0,
+      "originalPrice": null,
+      "rating": 4.5,
+      "ratingCount": 311,
+      "isSale": false,
+      "discount": null,
+      "isBestseller": false,
+      "category": "Bottoms",
+      "image": "/images/linen-blend-shorts.jpg"
+    },
+    {
+      "name": "Ribbed Turtleneck Sweater",
+      "price": 72.0,
+      "originalPrice": null,
+      "rating": 4.7,
+      "ratingCount": 176,
+      "isSale": false,
+      "discount": null,
+      "isBestseller": false,
+      "category": "Tops & Tees",
+      "image": "/images/ribbed-turtleneck-sweater.jpg"
+    },
+    {
+      "name": "Bucket Hat",
+      "price": 24.99,
+      "originalPrice": 31.99,
+      "rating": 4.8,
+      "ratingCount": 502,
+      "isSale": true,
+      "discount": 20,
+      "isBestseller": false,
+      "category": "Accessories",
+      "image": "/images/bucket-hat-accessory.jpg"
+    },
+    {
+      "name": "Crossbody Canvas Bag",
+      "price": 44.0,
+      "originalPrice": null,
+      "rating": 4.6,
+      "ratingCount": 238,
+      "isSale": false,
+      "discount": null,
+      "isBestseller": false,
+      "category": "Accessories",
+      "image": "/images/crossbody-canvas-bag.jpg"
+    },
+    {
+      "name": "Thermal Long-Sleeve Tee",
+      "price": 29.99,
+      "originalPrice": null,
+      "rating": 4.5,
+      "ratingCount": 419,
+      "isSale": false,
+      "discount": null,
+      "isBestseller": false,
+      "category": "Tops & Tees",
+      "image": "/images/thermal-long-sleeve-tee.jpg"
+    }
+  ],
+  "footer": [
+    {
+      "group": "Shop",
+      "label": "New Arrivals",
+      "href": "#product-grid"
+    },
+    {
+      "group": "Shop",
+      "label": "Best Sellers",
+      "href": "#featured-products"
+    },
+    {
+      "group": "Shop",
+      "label": "Sale",
+      "href": "/sale"
+    },
+    {
+      "group": "Shop",
+      "label": "Gift Cards",
+      "href": "#product-grid"
+    },
+    {
+      "group": "Help",
+      "label": "Track My Order",
+      "href": "#"
+    },
+    {
+      "group": "Help",
+      "label": "Returns & Exchanges",
+      "href": "#"
+    },
+    {
+      "group": "Help",
+      "label": "Sizing Guide",
+      "href": "#"
+    },
+    {
+      "group": "Help",
+      "label": "Contact Us",
+      "href": "#newsletter"
+    },
+    {
+      "group": "Company",
+      "label": "About Us",
+      "href": "#"
+    },
+    {
+      "group": "Company",
+      "label": "Sustainability",
+      "href": "#"
+    },
+    {
+      "group": "Company",
+      "label": "Careers",
+      "href": "#"
+    },
+    {
+      "group": "Company",
+      "label": "Press",
+      "href": "#"
+    },
+    {
+      "group": "Follow Us",
+      "label": "Instagram @novashop",
+      "href": "https://instagram.com/novashop"
+    },
+    {
+      "group": "Follow Us",
+      "label": "TikTok @novashop",
+      "href": "https://tiktok.com/@novashop"
+    },
+    {
+      "group": "Follow Us",
+      "label": "Pinterest @novashop",
+      "href": "https://pinterest.com/novashop"
+    },
+    {
+      "group": "Follow Us",
+      "label": "Twitter / X @novashop",
+      "href": "https://twitter.com/novashop"
+    }
+  ]
+}
