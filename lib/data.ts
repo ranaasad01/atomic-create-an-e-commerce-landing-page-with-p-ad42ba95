@@ -10,6 +10,10 @@ export const navLinks = [
   { key: "shop", label: "Shop", href: "/shop" },
   { key: "sale", label: "Sale", href: "/sale" },
   { key: "newsletter", label: "Newsletter", href: "/newsletter" },
+  { key: "about", label: "About", href: "/about" },
+  { key: "contact", label: "Contact", href: "/contact" },
+  { key: "cart", label: "Cart", href: "/cart" },
+  { key: "wishlist", label: "Wishlist", href: "/wishlist" },
 ];
 
 export const NAV_CTA = {

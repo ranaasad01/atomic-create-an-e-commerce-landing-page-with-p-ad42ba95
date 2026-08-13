@@ -28,15 +28,12 @@ export default function Navbar({ cartCount = 0, onCartClick }: NavbarProps) {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  function handleAnchorClick(
-    e: React.MouseEvent<HTMLAnchorElement>,
-    href: string
-  ) {
+  function handleAnchorClick(e: React.MouseEvent<HTMLAnchorElement>, href: string) {
     if (href.startsWith("#") && pathname === "/") {
       e.preventDefault();
       document.querySelector(href)?.scrollIntoView({ behavior: "smooth" });
-      setMobileOpen(false);
     }
+    setMobileOpen(false);
   }
 
   function getLinkHref(href: string) {
@@ -71,93 +68,95 @@ export default function Navbar({ cartCount = 0, onCartClick }: NavbarProps) {
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-1" aria-label="Main navigation">
-            {navLinks.map((link) => (
-              <Link
-                key={link.key}
-                href={getLinkHref(link.href)}
-                onClick={(e) => handleAnchorClick(e, link.href)}
-                className="px-4 py-2 rounded-lg text-sm font-medium text-[var(--muted-foreground)] hover:text-[var(--foreground)] hover:bg-[var(--card)] transition-all duration-200"
-              >
-                {navT[link.key] ?? link.label}
-              </Link>
-            ))}
+            {navLinks.map((link) => {
+              const isActive = link.href.startsWith('/') ? pathname === link.href : false;
+              return (
+                <Link
+                  key={link.key}
+                  href={getLinkHref(link.href)}
+                  onClick={(e) => handleAnchorClick(e as React.MouseEvent<HTMLAnchorElement>, link.href)}
+                  className={`px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
+                    isActive
+                      ? 'text-[var(--primary)] bg-[var(--primary)]/10'
+                      : 'text-[var(--muted-foreground)] hover:text-[var(--foreground)] hover:bg-[var(--card)]'
+                  }`}
+                >
+                  {navT[link.key] ?? link.label}
+                </Link>
+              );
+            })}
           </nav>
 
-          {/* Right Actions */}
-          <div className="flex items-center gap-2">
-            {/* Search */}
+          {/* Desktop Actions */}
+          <div className="hidden md:flex items-center gap-2">
             <button
               onClick={() => setSearchOpen(!searchOpen)}
-              className="p-2 rounded-lg text-[var(--muted-foreground)] hover:text-[var(--foreground)] hover:bg-[var(--card)] transition-all duration-200"
+              className="w-9 h-9 rounded-lg flex items-center justify-center text-[var(--muted-foreground)] hover:text-[var(--foreground)] hover:bg-[var(--card)] transition-all duration-200"
               aria-label="Toggle search"
             >
-              <Search className="w-5 h-5" aria-hidden="true" />
+              <Search className="w-4 h-4" aria-hidden="true" />
             </button>
-
-            {/* Cart */}
             <button
               onClick={onCartClick}
-              className="relative p-2 rounded-lg text-[var(--muted-foreground)] hover:text-[var(--foreground)] hover:bg-[var(--card)] transition-all duration-200"
+              className="relative w-9 h-9 rounded-lg flex items-center justify-center text-[var(--muted-foreground)] hover:text-[var(--foreground)] hover:bg-[var(--card)] transition-all duration-200"
               aria-label={`Shopping cart, ${cartCount} items`}
             >
-              <ShoppingCart className="w-5 h-5" aria-hidden="true" />
+              <ShoppingCart className="w-4 h-4" aria-hidden="true" />
               {cartCount > 0 && (
-                <motion.span
-                  initial={{ scale: 0 }}
-                  animate={{ scale: 1 }}
-                  className="absolute -top-1 -right-1 w-5 h-5 rounded-full bg-[var(--primary)] text-white text-xs font-bold flex items-center justify-center"
-                >
+                <span className="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-[var(--primary)] text-white text-[10px] font-bold flex items-center justify-center">
                   {cartCount}
-                </motion.span>
+                </span>
               )}
             </button>
-
-            {/* CTA */}
             <Link
-              href={getLinkHref(NAV_CTA.href)}
-              onClick={(e) => handleAnchorClick(e, NAV_CTA.href)}
-              className="hidden sm:inline-flex items-center px-4 py-2 rounded-lg bg-[var(--primary)] text-white text-sm font-semibold hover:bg-[var(--accent)] transition-all duration-200 shadow-[0_0_16px_rgba(233,69,96,0.3)] hover:shadow-[0_0_24px_rgba(255,112,150,0.4)]"
+              href={NAV_CTA.href}
+              className="ml-2 px-4 py-2 rounded-xl bg-[var(--primary)] text-white text-sm font-semibold hover:bg-[var(--accent)] transition-all duration-200 shadow-[0_0_16px_rgba(233,69,96,0.3)] hover:shadow-[0_0_24px_rgba(233,69,96,0.5)]"
             >
-              {navT["shopNow"] ?? NAV_CTA.label}
+              {navT['shopNow'] ?? NAV_CTA.label}
             </Link>
+          </div>
 
-            {/* Mobile Menu Toggle */}
+          {/* Mobile: cart + hamburger */}
+          <div className="flex md:hidden items-center gap-2">
+            <button
+              onClick={onCartClick}
+              className="relative w-9 h-9 rounded-lg flex items-center justify-center text-[var(--muted-foreground)] hover:text-[var(--foreground)] transition-all duration-200"
+              aria-label={`Shopping cart, ${cartCount} items`}
+            >
+              <ShoppingCart className="w-4 h-4" aria-hidden="true" />
+              {cartCount > 0 && (
+                <span className="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-[var(--primary)] text-white text-[10px] font-bold flex items-center justify-center">
+                  {cartCount}
+                </span>
+              )}
+            </button>
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
-              className="md:hidden p-2 rounded-lg text-[var(--muted-foreground)] hover:text-[var(--foreground)] hover:bg-[var(--card)] transition-all duration-200"
-              aria-label={mobileOpen ? "Close menu" : "Open menu"}
+              className="w-9 h-9 rounded-lg flex items-center justify-center text-[var(--muted-foreground)] hover:text-[var(--foreground)] hover:bg-[var(--card)] transition-all duration-200"
+              aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
+              aria-expanded={mobileOpen}
             >
-              {mobileOpen ? (
-                <X className="w-5 h-5" aria-hidden="true" />
-              ) : (
-                <Menu className="w-5 h-5" aria-hidden="true" />
-              )}
+              {mobileOpen ? <X className="w-5 h-5" aria-hidden="true" /> : <Menu className="w-5 h-5" aria-hidden="true" />}
             </button>
           </div>
         </div>
 
-        {/* Search Bar */}
+        {/* Search bar */}
         <AnimatePresence>
           {searchOpen && (
             <motion.div
               initial={{ height: 0, opacity: 0 }}
-              animate={{ height: "auto", opacity: 1 }}
+              animate={{ height: 'auto', opacity: 1 }}
               exit={{ height: 0, opacity: 0 }}
               transition={{ duration: 0.2 }}
               className="overflow-hidden pb-3"
             >
-              <div className="relative">
-                <Search
-                  className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[var(--muted-foreground)]"
-                  aria-hidden="true"
-                />
-                <input
-                  type="search"
-                  placeholder="Search for styles, brands, categories..."
-                  className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-[var(--card)] border border-[var(--border)] text-[var(--foreground)] placeholder:text-[var(--muted-foreground)] text-sm focus:outline-none focus:border-[var(--primary)] transition-colors"
-                  autoFocus
-                />
-              </div>
+              <input
+                type="search"
+                placeholder="Search products..."
+                autoFocus
+                className="w-full px-4 py-2.5 rounded-xl bg-[var(--card)] border border-[var(--border)] text-[var(--foreground)] placeholder:text-[var(--muted-foreground)] text-sm focus:outline-none focus:border-[var(--primary)] transition-colors"
+              />
             </motion.div>
           )}
         </AnimatePresence>
@@ -167,29 +166,36 @@ export default function Navbar({ cartCount = 0, onCartClick }: NavbarProps) {
       <AnimatePresence>
         {mobileOpen && (
           <motion.div
-            initial={{ opacity: 0, y: -10 }}
+            initial={{ opacity: 0, y: -8 }}
             animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -10 }}
+            exit={{ opacity: 0, y: -8 }}
             transition={{ duration: 0.2 }}
-            className="md:hidden bg-[var(--background)]/98 backdrop-blur-md border-b border-[var(--border)]"
+            className="md:hidden bg-[var(--background)]/98 backdrop-blur-md border-b border-[var(--border)] px-4 pb-6 pt-2"
           >
-            <nav className="max-w-7xl mx-auto px-4 py-4 flex flex-col gap-1" aria-label="Mobile navigation">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.key}
-                  href={getLinkHref(link.href)}
-                  onClick={(e) => handleAnchorClick(e, link.href)}
-                  className="px-4 py-3 rounded-xl text-sm font-medium text-[var(--muted-foreground)] hover:text-[var(--foreground)] hover:bg-[var(--card)] transition-all duration-200"
-                >
-                  {navT[link.key] ?? link.label}
-                </Link>
-              ))}
+            <nav className="flex flex-col gap-1" aria-label="Mobile navigation">
+              {navLinks.map((link) => {
+                const isActive = link.href.startsWith('/') ? pathname === link.href : false;
+                return (
+                  <Link
+                    key={link.key}
+                    href={getLinkHref(link.href)}
+                    onClick={(e) => handleAnchorClick(e as React.MouseEvent<HTMLAnchorElement>, link.href)}
+                    className={`px-4 py-3 rounded-xl text-sm font-medium transition-all duration-200 ${
+                      isActive
+                        ? 'text-[var(--primary)] bg-[var(--primary)]/10'
+                        : 'text-[var(--muted-foreground)] hover:text-[var(--foreground)] hover:bg-[var(--card)]'
+                    }`}
+                  >
+                    {navT[link.key] ?? link.label}
+                  </Link>
+                );
+              })}
               <Link
-                href={getLinkHref(NAV_CTA.href)}
-                onClick={(e) => handleAnchorClick(e, NAV_CTA.href)}
+                href={NAV_CTA.href}
+                onClick={() => setMobileOpen(false)}
                 className="mt-2 px-4 py-3 rounded-xl bg-[var(--primary)] text-white text-sm font-semibold text-center hover:bg-[var(--accent)] transition-all duration-200"
               >
-                {navT["shopNow"] ?? NAV_CTA.label}
+                {navT['shopNow'] ?? NAV_CTA.label}
               </Link>
             </nav>
           </motion.div>

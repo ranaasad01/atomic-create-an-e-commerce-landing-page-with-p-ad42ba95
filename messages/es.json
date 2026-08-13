@@ -5,7 +5,11 @@
     "shop": "Tienda",
     "sale": "Rebajas",
     "newsletter": "Boletín",
-    "shopNow": "Comprar Ahora"
+    "shopNow": "Comprar Ahora",
+    "cart": "Carrito",
+    "wishlist": "Lista de deseos",
+    "about": "Nosotros",
+    "contact": "Contacto"
   },
   "hero": [
     "Free shipping on orders over $50",
@@ -93,310 +97,177 @@
   },
   "featured-products": [
     {
-      "name": "Oversized Graphic Hoodie",
+      "name": "Sudadera Gráfica Oversize",
       "price": 64.99,
       "originalPrice": 81.99,
       "rating": 4.8,
       "ratingCount": 312,
       "isSale": true,
       "discount": 20,
-      "isBestseller": false,
-      "category": "Hoodies & Sweatshirts",
-      "image": "/images/oversized-graphic-hoodie.jpg"
+      "isBestseller": true,
+      "category": "Sudaderas",
+      "image": "https://titoaistorageaccount.blob.core.windows.net/titoai-storage/site-images/8efbbf0a628344888c36691281089bc9.png"
     },
     {
-      "name": "Air-Knit Jogger Set",
-      "price": 89.0,
+      "name": "Camiseta Cargo Utilitaria",
+      "price": 48.99,
       "originalPrice": null,
+      "rating": 4.6,
+      "ratingCount": 189,
+      "isSale": false,
+      "discount": null,
+      "isBestseller": false,
+      "category": "Tops",
+      "image": "https://titoaistorageaccount.blob.core.windows.net/titoai-storage/site-images/cfd08b86e11441c1b58eb295a741e166.jpg"
+    },
+    {
+      "name": "Pantalón Cargo Holgado",
+      "price": 72.0,
+      "originalPrice": 90.0,
       "rating": 4.7,
-      "ratingCount": 198,
+      "ratingCount": 241,
+      "isSale": true,
+      "discount": 20,
+      "isBestseller": false,
+      "category": "Pantalones",
+      "image": "https://titoaistorageaccount.blob.core.windows.net/titoai-storage/site-images/052271bbf5fb42bc865cd97b66c148c8.webp"
+    },
+    {
+      "name": "Chaqueta Bomber Clásica",
+      "price": 119.0,
+      "originalPrice": null,
+      "rating": 4.9,
+      "ratingCount": 98,
       "isSale": false,
       "discount": null,
       "isBestseller": true,
-      "category": "Bottoms",
-      "image": "/images/air-knit-jogger-set.jpg"
-    },
-    {
-      "name": "Retro Colorblock Windbreaker",
-      "price": 112.0,
-      "originalPrice": 131.99,
-      "rating": 4.9,
-      "ratingCount": 87,
-      "isSale": true,
-      "discount": 15,
-      "isBestseller": false,
-      "category": "Outerwear",
-      "image": "/images/retro-colorblock-windbreaker.jpg"
-    },
-    {
-      "name": "Ribbed Cropped Tank (3-Pack)",
-      "price": 34.99,
-      "originalPrice": null,
-      "rating": 4.6,
-      "ratingCount": 540,
-      "isSale": false,
-      "discount": null,
-      "isBestseller": false,
-      "category": "Tops & Tees",
-      "image": "/images/ribbed-cropped-tank-3pack.jpg"
-    }
-  ],
-  "category-filter": [
-    {
-      "label": "All",
-      "value": "all"
-    },
-    {
-      "label": "Tops & Tees",
-      "value": "Tops & Tees"
-    },
-    {
-      "label": "Hoodies & Sweatshirts",
-      "value": "Hoodies & Sweatshirts"
-    },
-    {
-      "label": "Bottoms",
-      "value": "Bottoms"
-    },
-    {
-      "label": "Outerwear",
-      "value": "Outerwear"
-    },
-    {
-      "label": "Accessories",
-      "value": "Accessories"
-    },
-    {
-      "label": "Sale",
-      "value": "sale"
+      "category": "Abrigos",
+      "image": "https://titoaistorageaccount.blob.core.windows.net/titoai-storage/site-images/b26a00cc3fd149e491a99eb754bcd4ce.jpg"
     }
   ],
   "product-grid": [
     {
-      "name": "Washed Denim Overshirt",
-      "price": 74.99,
+      "name": "Camiseta Gráfica Esencial",
+      "price": 29.99,
       "originalPrice": null,
       "rating": 4.5,
-      "ratingCount": 221,
+      "ratingCount": 203,
       "isSale": false,
       "discount": null,
       "isBestseller": false,
-      "category": "Tops & Tees",
-      "image": "/images/washed-denim-overshirt.jpg"
+      "category": "Tops",
+      "image": "https://titoaistorageaccount.blob.core.windows.net/titoai-storage/site-images/cfd08b86e11441c1b58eb295a741e166.jpg"
     },
     {
-      "name": "Essential Slim-Fit Tee",
-      "price": 22.0,
-      "originalPrice": 31.99,
+      "name": "Sudadera con Capucha Clásica",
+      "price": 54.99,
+      "originalPrice": 69.99,
       "rating": 4.7,
-      "ratingCount": 893,
+      "ratingCount": 178,
       "isSale": true,
-      "discount": 30,
-      "isBestseller": false,
-      "category": "Tops & Tees",
-      "image": "/images/essential-slim-fit-tee.jpg"
+      "discount": 21,
+      "isBestseller": true,
+      "category": "Sudaderas",
+      "image": "https://titoaistorageaccount.blob.core.windows.net/titoai-storage/site-images/8efbbf0a628344888c36691281089bc9.png"
     },
     {
-      "name": "Cargo Wide-Leg Trousers",
-      "price": 96.0,
+      "name": "Pantalón Jogger Streetwear",
+      "price": 44.99,
       "originalPrice": null,
-      "rating": 4.6,
+      "rating": 4.4,
       "ratingCount": 134,
       "isSale": false,
       "discount": null,
       "isBestseller": false,
-      "category": "Bottoms",
-      "image": "/images/cargo-wide-leg-trousers.jpg"
+      "category": "Pantalones",
+      "image": "https://titoaistorageaccount.blob.core.windows.net/titoai-storage/site-images/052271bbf5fb42bc865cd97b66c148c8.webp"
     },
     {
-      "name": "Fleece Quarter-Zip Pullover",
-      "price": 58.0,
-      "originalPrice": 77.99,
+      "name": "Parka Acolchada de Invierno",
+      "price": 134.99,
+      "originalPrice": 159.99,
       "rating": 4.8,
-      "ratingCount": 407,
+      "ratingCount": 87,
       "isSale": true,
-      "discount": 25,
+      "discount": 16,
       "isBestseller": false,
-      "category": "Hoodies & Sweatshirts",
-      "image": "/images/fleece-quarter-zip-pullover.jpg"
-    },
-    {
-      "name": "Satin Slip Midi Skirt",
-      "price": 49.99,
-      "originalPrice": null,
-      "rating": 4.4,
-      "ratingCount": 162,
-      "isSale": false,
-      "discount": null,
-      "isBestseller": false,
-      "category": "Bottoms",
-      "image": "/images/satin-slip-midi-skirt.jpg"
-    },
-    {
-      "name": "Heavyweight Crewneck Sweatshirt",
-      "price": 67.0,
-      "originalPrice": null,
-      "rating": 4.9,
-      "ratingCount": 289,
-      "isSale": false,
-      "discount": null,
-      "isBestseller": true,
-      "category": "Hoodies & Sweatshirts",
-      "image": "/images/heavyweight-crewneck-sweatshirt.jpg"
-    },
-    {
-      "name": "Puffer Vest",
-      "price": 85.0,
-      "originalPrice": 94.99,
-      "rating": 4.6,
-      "ratingCount": 98,
-      "isSale": true,
-      "discount": 10,
-      "isBestseller": false,
-      "category": "Outerwear",
-      "image": "/images/puffer-vest-outerwear.jpg"
-    },
-    {
-      "name": "Linen Blend Shorts",
-      "price": 38.0,
-      "originalPrice": null,
-      "rating": 4.5,
-      "ratingCount": 311,
-      "isSale": false,
-      "discount": null,
-      "isBestseller": false,
-      "category": "Bottoms",
-      "image": "/images/linen-blend-shorts.jpg"
-    },
-    {
-      "name": "Ribbed Turtleneck Sweater",
-      "price": 72.0,
-      "originalPrice": null,
-      "rating": 4.7,
-      "ratingCount": 176,
-      "isSale": false,
-      "discount": null,
-      "isBestseller": false,
-      "category": "Tops & Tees",
-      "image": "/images/ribbed-turtleneck-sweater.jpg"
-    },
-    {
-      "name": "Bucket Hat",
-      "price": 24.99,
-      "originalPrice": 31.99,
-      "rating": 4.8,
-      "ratingCount": 502,
-      "isSale": true,
-      "discount": 20,
-      "isBestseller": false,
-      "category": "Accessories",
-      "image": "/images/bucket-hat-accessory.jpg"
-    },
-    {
-      "name": "Crossbody Canvas Bag",
-      "price": 44.0,
-      "originalPrice": null,
-      "rating": 4.6,
-      "ratingCount": 238,
-      "isSale": false,
-      "discount": null,
-      "isBestseller": false,
-      "category": "Accessories",
-      "image": "/images/crossbody-canvas-bag.jpg"
-    },
-    {
-      "name": "Thermal Long-Sleeve Tee",
-      "price": 29.99,
-      "originalPrice": null,
-      "rating": 4.5,
-      "ratingCount": 419,
-      "isSale": false,
-      "discount": null,
-      "isBestseller": false,
-      "category": "Tops & Tees",
-      "image": "/images/thermal-long-sleeve-tee.jpg"
+      "category": "Abrigos",
+      "image": "https://titoaistorageaccount.blob.core.windows.net/titoai-storage/site-images/b26a00cc3fd149e491a99eb754bcd4ce.jpg"
     }
   ],
-  "footer": [
-    {
-      "group": "Shop",
-      "label": "New Arrivals",
-      "href": "#product-grid"
-    },
-    {
-      "group": "Shop",
-      "label": "Best Sellers",
-      "href": "#featured-products"
-    },
-    {
-      "group": "Shop",
-      "label": "Sale",
-      "href": "/sale"
-    },
-    {
-      "group": "Shop",
-      "label": "Gift Cards",
-      "href": "#product-grid"
-    },
-    {
-      "group": "Help",
-      "label": "Track My Order",
-      "href": "#"
-    },
-    {
-      "group": "Help",
-      "label": "Returns & Exchanges",
-      "href": "#"
-    },
-    {
-      "group": "Help",
-      "label": "Sizing Guide",
-      "href": "#"
-    },
-    {
-      "group": "Help",
-      "label": "Contact Us",
-      "href": "#newsletter"
-    },
-    {
-      "group": "Company",
-      "label": "About Us",
-      "href": "#"
-    },
-    {
-      "group": "Company",
-      "label": "Sustainability",
-      "href": "#"
-    },
-    {
-      "group": "Company",
-      "label": "Careers",
-      "href": "#"
-    },
-    {
-      "group": "Company",
-      "label": "Press",
-      "href": "#"
-    },
-    {
-      "group": "Follow Us",
-      "label": "Instagram @novashop",
-      "href": "https://instagram.com/novashop"
-    },
-    {
-      "group": "Follow Us",
-      "label": "TikTok @novashop",
-      "href": "https://tiktok.com/@novashop"
-    },
-    {
-      "group": "Follow Us",
-      "label": "Pinterest @novashop",
-      "href": "https://pinterest.com/novashop"
-    },
-    {
-      "group": "Follow Us",
-      "label": "Twitter / X @novashop",
-      "href": "https://twitter.com/novashop"
-    }
-  ]
+  "category-filter": [
+    { "label": "Todos", "value": "all" },
+    { "label": "Tops", "value": "Tops" },
+    { "label": "Sudaderas", "value": "Sudaderas" },
+    { "label": "Pantalones", "value": "Pantalones" },
+    { "label": "Abrigos", "value": "Abrigos" },
+    { "label": "Rebajas", "value": "sale" }
+  ],
+  "cart": {
+    "heading": "Tu Carrito",
+    "eyebrow": "Carrito de Compras",
+    "empty": "Tu carrito está vacío",
+    "emptySubtext": "Parece que aún no has agregado nada.",
+    "shopNow": "Comprar Ahora",
+    "remove": "Eliminar",
+    "quantity": "Cant.",
+    "subtotal": "Subtotal",
+    "discount": "Descuento",
+    "total": "Total",
+    "discountPlaceholder": "Ingresa código de descuento",
+    "applyCode": "Aplicar",
+    "checkout": "Proceder al Pago",
+    "continueShopping": "Seguir Comprando",
+    "orderSummary": "Resumen del Pedido",
+    "shipping": "Envío",
+    "shippingFree": "Gratis",
+    "tax": "Impuesto (estimado)"
+  },
+  "wishlist": {
+    "eyebrow": "Tu Lista de Deseos",
+    "heading": "Artículos Guardados",
+    "subtext": "Artículos que guardaste para después.",
+    "empty": "Tu lista de deseos está vacía",
+    "emptySubtext": "Explora nuestra colección y guarda lo que te guste.",
+    "moveToCart": "Mover al Carrito",
+    "remove": "Eliminar",
+    "shopNow": "Explorar Colección"
+  },
+  "about": {
+    "eyebrow": "Nuestra Historia",
+    "heading": "Moda Audaz para Personas Audaces",
+    "subtext": "Nova Shop nació de una idea simple: la moda debe ser valiente.",
+    "missionHeading": "Nuestra Misión",
+    "missionText": "Creemos que la ropa es una forma de autoexpresión.",
+    "teamHeading": "Conoce al Equipo",
+    "valuesHeading": "¿Por Qué Comprar Con Nosotros?",
+    "shippingBadge": "Envío Mundial Gratis",
+    "shippingText": "Envío gratis en pedidos mayores a $50.",
+    "returnsBadge": "Devoluciones en 30 Días",
+    "returnsText": "Devuelve cualquier artículo en 30 días para un reembolso completo.",
+    "qualityBadge": "Calidad Premium",
+    "qualityText": "Cada pieza está elaborada con materiales de alta calidad.",
+    "sustainBadge": "Prácticas Sostenibles",
+    "sustainText": "Comprometidos con reducir nuestra huella ambiental."
+  },
+  "contact": {
+    "eyebrow": "Contáctanos",
+    "heading": "Nos Encantaría Saber de Ti",
+    "subtext": "¿Tienes una pregunta o comentario? Nuestro equipo está aquí para ayudarte.",
+    "nameLabel": "Tu Nombre",
+    "emailLabel": "Correo Electrónico",
+    "subjectLabel": "Asunto",
+    "messageLabel": "Mensaje",
+    "submitLabel": "Enviar Mensaje",
+    "successHeading": "¡Mensaje Enviado!",
+    "successText": "Gracias por contactarnos. Te responderemos en 24 horas.",
+    "addressHeading": "Visítanos",
+    "addressText": "123 Fashion Ave, Los Angeles, CA 90001",
+    "hoursHeading": "Horario de Soporte",
+    "hoursText": "Lunes – Viernes, 9am – 6pm PST",
+    "chatHeading": "Chat en Vivo",
+    "chatText": "Chatea con nuestro equipo en tiempo real.",
+    "chatCTA": "Iniciar Chat en Vivo",
+    "faqHeading": "Preguntas Frecuentes"
+  }
 }
